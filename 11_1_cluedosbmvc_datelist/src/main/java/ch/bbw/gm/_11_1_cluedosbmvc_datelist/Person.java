@@ -9,10 +9,10 @@ public class Person {
     private String anrede;
     private String haarfarbe;
     private int alter;
-    private int groesse;
+    private double groesse;
     private String merkmal;
 
-    public Person(String name, String anrede, String haarfarbe, int alter, int groesse, String merkmal) {
+    public Person(String name, String anrede, String haarfarbe, int alter, double groesse, String merkmal) {
         this.name = name;
         this.anrede = anrede;
         this.haarfarbe = haarfarbe;
@@ -37,7 +37,7 @@ public class Person {
         this.alter = alter;
     }
 
-    public void setGroesse(int groesse) {
+    public void setGroesse(double groesse) {
         this.groesse = groesse;
     }
 
@@ -61,7 +61,7 @@ public class Person {
         return alter;
     }
 
-    public int getGroesse() {
+    public double getGroesse() {
         return groesse;
     }
 
