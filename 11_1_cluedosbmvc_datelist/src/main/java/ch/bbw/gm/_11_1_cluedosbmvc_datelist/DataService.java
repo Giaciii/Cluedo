@@ -2,7 +2,6 @@ package ch.bbw.gm._11_1_cluedosbmvc_datelist;
 
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +20,19 @@ public class DataService {
             new Person("Peacock", "Mrs", "Grau", 67, 1.70, "Krone")
     );
 
+    private List<Weapon> weapons = List.of(
+            new Weapon("Dolch", "Stahl", 25, 450),
+            new Weapon("Kerzenleuchter", "Eisen", 30, 1000),
+            new Weapon("Bleirohr", "Blei", 50, 2500),
+            new Weapon("Seil", "Stroh", 2500, 80),
+            new Weapon("Rohrzange", "Eisen", 30, 1000),
+            new Weapon("Revolver", "Stahl", 26, 400)
+    );
+
     public List<Person> getPersons() {
         return persons;
+    }
+    public List<Weapon> getWeapons() {
+        return weapons;
     }
 }
