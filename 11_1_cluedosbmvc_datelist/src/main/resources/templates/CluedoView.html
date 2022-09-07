@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Cluedo</title>
+    <link rel="stylesheet" href="css/mvp.css">
 </head>
 <body>
-    <div>Hello World</div>
+<main>
+    <header>
+        <h1>Cluedo data lists:</h1>
+    </header>
+    <h2>The persons</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Anrede</th>
+            <th>Haarfarbe</th>
+            <th>Alter</th>
+            <th>Grösse</th>
+            <th>Merkmal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="person : ${persons}">
+            <td th:text="${person.name}"></td>
+            <td th:text="${person.anrede}"></td>
+            <td th:text="${person.haarfarbe}"></td>
+            <td th:text="${person.alter}"></td>
+            <td th:text="${person.groesse}"></td>
+            <td th:text="${person.merkmal}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>The weapons</h2>
+    <p>To be done</p>
+    <h2>The rooms</h2>
+    <p>To be done</p>
+</main>
 </body>
 </html>
