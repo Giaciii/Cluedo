@@ -57,17 +57,21 @@
         <thead>
         <tr>
             <th>Bezeichnung</th>
-            <th>Material</th>
-            <th>Länge in cm</th>
-            <th>Gewicht in cm</th>
+            <th>Grösse</th>
+            <th>Türen</th>
+            <th>Fenster</th>
+            <th>Bodenmuster</th>
+            <th>Helligkeit</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="weapon : ${weapons}">
-            <td th:text="${weapon.bezeichnung}"></td>
-            <td th:text="${weapon.material}"></td>
-            <td th:text="${weapon.laenge}"></td>
-            <td th:text="${weapon.gewicht}"></td>
+        <tr th:each="room : ${rooms}">
+            <td th:text="${room.bezeichnung}"></td>
+            <td th:text="${room.groesse}"></td>
+            <td th:text="${room.tueren}"></td>
+            <td th:text="${room.fenster}"></td>
+            <td th:text="${room.bodenmuster}"></td>
+            <td th:text="${room.helligkeit}"></td>
         </tr>
         </tbody>
     </table>

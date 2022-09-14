@@ -19,6 +19,7 @@ public class ViewController {
         System.out.println("ViewController.showCluedoView");
         model.addAttribute("persons", service.getPersons() );
         model.addAttribute("weapons", service.getWeapons() );
+        model.addAttribute("rooms", service.getRooms() );
         return "CluedoView.html";
     }
 }

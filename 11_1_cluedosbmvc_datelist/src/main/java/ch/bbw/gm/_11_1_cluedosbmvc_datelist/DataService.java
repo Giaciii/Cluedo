@@ -29,10 +29,19 @@ public class DataService {
             new Weapon("Revolver", "Stahl", 26, 400)
     );
 
+    private List<Room> rooms = List.of(
+            new Room("Eingangshalle", 20, 3, 2, "Karo", "Dunkel"),
+            new Room("Wintergarten", 30, 1, 5, "Karo", "Sehr hell"),
+            new Room("Wohnzimmer", 50, 1, 5, "Holzlinien", "Sehr hell"),
+            new Room("Esszimmer", 30, 1, 4, "Holzlinien", "Mittel dunkel"),
+            new Room("Küche", 25, 1, 2, "Quadrate", "Hell")
+    );
+
     public List<Person> getPersons() {
         return persons;
     }
     public List<Weapon> getWeapons() {
         return weapons;
     }
+    public List<Room> getRooms() { return rooms; }
 }
